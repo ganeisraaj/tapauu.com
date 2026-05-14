@@ -94,8 +94,8 @@ export default function Home() {
             <AnimatedSection className="w-full max-w-4xl relative">
               <div className="aspect-[16/9] md:aspect-[21/9] w-full rounded-[2rem] overflow-hidden shadow-2xl shadow-[#1A1A1A]/10 border-[6px] border-white bg-white">
                 <Image
-                  src="/hero_app_mockup.png"
-                  alt="TAPAUU App Mockup"
+                  src="/hero_app_dashboard.png"
+                  alt="TAPAUU App Dashboard"
                   fill
                   className="object-cover"
                   priority
