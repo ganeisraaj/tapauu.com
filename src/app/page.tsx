@@ -428,7 +428,7 @@ export default function Home() {
               {/* Linath */}
               <AnimatedSection className="bg-white rounded-[2rem] p-4 pb-6 shadow-sm border border-[#1A1A1A]/5 flex flex-col items-center">
                 <div className="w-full aspect-square relative rounded-[1.5rem] overflow-hidden mb-6 bg-[#FAF7F4]">
-                  <Image src="/founder_linath.png" alt="Linath" fill className="object-cover" />
+                  <Image src="/founder_linath.jpg" alt="Linath" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Linath</h3>
                 <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
@@ -437,7 +437,7 @@ export default function Home() {
               {/* Raaj */}
               <AnimatedSection className="bg-white rounded-[2rem] p-4 pb-6 shadow-sm border border-[#1A1A1A]/5 flex flex-col items-center">
                 <div className="w-full aspect-square relative rounded-[1.5rem] overflow-hidden mb-6 bg-[#FAF7F4]">
-                  <Image src="/founder_raaj.png" alt="Raaj" fill className="object-cover" />
+                  <Image src="/founder_raaj.jpg" alt="Raaj" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Raaj</h3>
                 <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
@@ -446,7 +446,7 @@ export default function Home() {
               {/* Daniel */}
               <AnimatedSection className="bg-white rounded-[2rem] p-4 pb-6 shadow-sm border border-[#1A1A1A]/5 flex flex-col items-center">
                 <div className="w-full aspect-square relative rounded-[1.5rem] overflow-hidden mb-6 bg-[#FAF7F4]">
-                  <Image src="/founder_daniel.png" alt="Daniel" fill className="object-cover" />
+                  <Image src="/founder_daniel.jpg" alt="Daniel" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Daniel</h3>
                 <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
