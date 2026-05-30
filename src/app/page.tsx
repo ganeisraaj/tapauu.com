@@ -24,6 +24,7 @@ export default function Home() {
             <Link href="#problem" className="hover:text-[#F26B3A] transition-colors">About</Link>
             <Link href="#how-it-works" className="hover:text-[#F26B3A] transition-colors">How It Works</Link>
             <Link href="#story" className="hover:text-[#F26B3A] transition-colors">Our Story</Link>
+            <Link href="#news" className="hover:text-[#F26B3A] transition-colors">News</Link>
             <Link href="#team" className="hover:text-[#F26B3A] transition-colors">Team</Link>
             <Link href="#contact" className="hover:text-[#F26B3A] transition-colors">Contact</Link>
           </div>
@@ -413,6 +414,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* In The News */}
+        <section id="news" className="py-24 bg-white border-t border-[#1A1A1A]/5">
+          <div className="max-w-7xl mx-auto px-6">
+            <AnimatedSection className="text-center mb-16">
+              <span className="text-[#F26B3A] text-sm font-semibold tracking-wider uppercase mb-3 block">PRESS & NEWS</span>
+              <h2 className="text-3xl md:text-4xl font-bold">What people are saying about us.</h2>
+            </AnimatedSection>
+
+            <div className="flex justify-center max-w-3xl mx-auto">
+              <div className="w-full group bg-[#FAF7F4]/50 border-2 border-dashed border-[#1A1A1A]/10 p-10 md:p-12 rounded-3xl flex flex-col items-center justify-center text-center">
+                <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-sm border border-[#1A1A1A]/5 text-[#F26B3A]">
+                  <Mail size={24} />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Are you a journalist?</h3>
+                <p className="text-[#1A1A1A]/60 text-lg font-medium mb-8">We&apos;d love to share our story with you.</p>
+                <a href="mailto:hello@tapauu.com" className="bg-white px-8 py-3 rounded-full font-semibold border border-[#1A1A1A]/10 hover:border-[#F26B3A] hover:text-[#F26B3A] transition-colors shadow-sm">
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Meet the Team */}
         <section id="team" className="py-24 bg-[#FAF7F4]">
           <div className="max-w-7xl mx-auto px-6">
@@ -431,7 +455,7 @@ export default function Home() {
                   <Image src="/founder_linath.jpg" alt="Linath" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Linath</h3>
-                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
+                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder & CFO</span>
               </AnimatedSection>
 
               {/* Raaj */}
@@ -440,7 +464,7 @@ export default function Home() {
                   <Image src="/founder_raaj.jpg" alt="Raaj" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Raaj</h3>
-                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
+                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder & CEO</span>
               </AnimatedSection>
 
               {/* Daniel */}
@@ -449,7 +473,7 @@ export default function Home() {
                   <Image src="/founder_daniel.jpg" alt="Daniel" fill className="object-cover object-top" />
                 </div>
                 <h3 className="text-xl font-bold">Daniel</h3>
-                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder</span>
+                <span className="text-[#F26B3A] font-semibold text-sm">Co-Founder & COO</span>
               </AnimatedSection>
             </div>
           </div>
@@ -460,24 +484,39 @@ export default function Home() {
       {/* Footer / Contact */}
       <footer id="contact" className="bg-[#1A1A1A] text-white pt-24 pb-12 rounded-t-[3rem] mt-[-2rem] z-10 relative">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Want to partner, invest, <br className="hidden md:block" /> or just say hi?</h2>
+          <AnimatedSection className="mb-20 bg-[#FAF7F4] rounded-[3rem] p-12 md:p-16 text-[#1A1A1A] shadow-xl flex flex-col items-center text-center">
+            <h2 className="text-xl md:text-2xl font-bold tracking-[0.2em] uppercase mb-8 text-[#1A1A1A]/80">Follow Us!</h2>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="mailto:hello@tapauu.com"
-                className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
-              >
-                <Mail size={18} /> hello@tapauu.com
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 mb-16">
+              <a href="https://www.instagram.com/tapauu_my/" target="_blank" rel="noopener noreferrer" className="text-[#1A1A1A] hover:text-[#F26B3A] hover:-translate-y-1 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a
-                href="https://tapauu-pilot.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#F26B3A] hover:bg-[#d95c2e] text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
-              >
-                Try the App <ArrowRight size={18} />
+              <a href="https://www.tiktok.com/@tapauu_my" target="_blank" rel="noopener noreferrer" className="text-[#1A1A1A] hover:text-[#F26B3A] hover:-translate-y-1 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.44-3.17-3.43-5.3.01-3.33 3.4-5.96 6.66-4.84.14.05.27.08.42.15v4.01c-1.22-.36-2.61.19-2.87 1.4-.15.6.07 1.33.6 1.7.98.68 2.25-.09 2.37-1.35.01-4.71-.03-9.42.02-14.13.25-.13.52-.27.78-.4Z" /></svg>
               </a>
+              <a href="https://www.linkedin.com/company/tapauu/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-[#1A1A1A] hover:text-[#F26B3A] hover:-translate-y-1 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+            </div>
+
+            <div className="w-full max-w-2xl border-t border-[#1A1A1A]/10 pt-10">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">Want to partner or just say hi?</h2>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                  href="mailto:hello@tapauu.com"
+                  className="w-full sm:w-auto bg-[#F26B3A] hover:bg-[#d95c2e] text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 shadow-sm"
+                >
+                  <Mail size={18} /> hello@tapauu.com
+                </a>
+                <a
+                  href="https://tapauu-pilot.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto bg-transparent border-2 border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2"
+                >
+                  Try the App <ArrowRight size={18} />
+                </a>
+              </div>
             </div>
           </AnimatedSection>
 
