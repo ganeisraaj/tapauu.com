@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Clock, ShoppingBag, ArrowRight, CheckCircle2, MapPin, CalendarDays, Users, TrendingUp, Mail } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { WaitlistSection } from "@/components/WaitlistSection";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
             <Link href="#story" className="hover:text-[#F26B3A] transition-colors">Our Story</Link>
             <Link href="#news" className="hover:text-[#F26B3A] transition-colors">News</Link>
             <Link href="#team" className="hover:text-[#F26B3A] transition-colors">Team</Link>
+            <Link href="#waitlist" className="hover:text-[#F26B3A] transition-colors">Waitlist</Link>
             <Link href="#contact" className="hover:text-[#F26B3A] transition-colors">Contact</Link>
           </div>
 
@@ -478,6 +480,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Waitlist Section */}
+        <WaitlistSection />
 
       </main>
 
