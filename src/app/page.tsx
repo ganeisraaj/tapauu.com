@@ -424,17 +424,51 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold">What people are saying about us.</h2>
             </AnimatedSection>
 
-            <div className="flex justify-center max-w-3xl mx-auto">
-              <div className="w-full group bg-[#FAF7F4]/50 border-2 border-dashed border-[#1A1A1A]/10 p-10 md:p-12 rounded-3xl flex flex-col items-center justify-center text-center">
-                <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-sm border border-[#1A1A1A]/5 text-[#F26B3A]">
-                  <Mail size={24} />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">Are you a journalist?</h3>
-                <p className="text-[#1A1A1A]/60 text-lg font-medium mb-8">We&apos;d love to share our story with you.</p>
-                <a href="mailto:hello@tapauu.com" className="bg-white px-8 py-3 rounded-full font-semibold border border-[#1A1A1A]/10 hover:border-[#F26B3A] hover:text-[#F26B3A] transition-colors shadow-sm">
-                  Get in Touch
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {/* Featured Article Card */}
+              <AnimatedSection>
+                <a
+                  href="https://www.disruptr.com.my/built-by-students-for-students-tapauu-tackles-malaysias-campus-food-problem/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col h-full bg-[#FAF7F4] rounded-3xl overflow-hidden border border-[#1A1A1A]/5 shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
+                >
+                  <div className="bg-[#1A1A1A] px-6 py-4 flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-[#F26B3A]" />
+                    <span className="text-white text-sm font-bold tracking-widest uppercase">Disruptr MY</span>
+                    <span className="ml-auto text-white/40 text-xs font-medium">June 2026</span>
+                  </div>
+                  <div className="p-8 flex flex-col flex-grow">
+                    <span className="inline-block bg-[#FFE8DF] text-[#F26B3A] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 self-start">
+                      Featured
+                    </span>
+                    <h3 className="text-xl font-bold mb-3 leading-snug group-hover:text-[#F26B3A] transition-colors">
+                      Built by Students, for Students: TAPAUU Tackles Malaysia&apos;s Campus Food Problem
+                    </h3>
+                    <p className="text-[#1A1A1A]/60 font-medium leading-relaxed text-sm flex-grow">
+                      &ldquo;We realised there is a student who cannot afford to eat well sitting right next to a vendor who cannot predict his own income, and nobody has connected the two in a structured way.&rdquo;
+                    </p>
+                    <div className="flex items-center gap-2 mt-6 text-[#F26B3A] font-semibold text-sm">
+                      <span>Read Article</span>
+                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
                 </a>
-              </div>
+              </AnimatedSection>
+
+              {/* Journalist CTA */}
+              <AnimatedSection>
+                <div className="h-full group bg-[#FAF7F4]/50 border-2 border-dashed border-[#1A1A1A]/10 p-10 rounded-3xl flex flex-col items-center justify-center text-center">
+                  <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-sm border border-[#1A1A1A]/5 text-[#F26B3A]">
+                    <Mail size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3">Are you a journalist?</h3>
+                  <p className="text-[#1A1A1A]/60 text-lg font-medium mb-8">We&apos;d love to share our story with you.</p>
+                  <a href="mailto:hello@tapauu.com" className="bg-white px-8 py-3 rounded-full font-semibold border border-[#1A1A1A]/10 hover:border-[#F26B3A] hover:text-[#F26B3A] transition-colors shadow-sm">
+                    Get in Touch
+                  </a>
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
